@@ -1,0 +1,109 @@
+.advantages__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000;
+  margin-top: -7px;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__text {
+  @include main-text;
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+.advantages__item::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.advantages__item--nutritious::before {
+  background-image: url("../../img/icon/nutritious.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--cooking::before {
+  background-image: url("../../img/icon/cooking.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--change::before {
+  background-image: url("../../img/icon/change.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--results::before {
+  background-image: url("../../img/icon/results.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media(min-width:768px){
+  .advantages__list{
+    list-style: none;
+    counter-reset: num;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
+
+  }
+}
+
+@media(min-width: 768px){
+  .advantages__item{
+    min-height: 280px;
+    width: 246px;
+    padding-left: 0;
+    margin-bottom: 37px;
+  }
+}
+@media (min-width: 768px){
+  .advantages__item::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media(min-width:768px){
+  .advantages__item::after{
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    width: 112px;
+    font-size: 280px;
+    color:#F2F2F2;
+    left: 133px;
+    top: 96px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 768px){
+  .advantages__text{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 135px;
+  }
+}

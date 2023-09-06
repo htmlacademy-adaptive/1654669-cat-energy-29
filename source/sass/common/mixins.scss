@@ -1,0 +1,30 @@
+@mixin main-text {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $main-text-color;
+}
+
+@mixin button {
+  font-weight: 400;
+  font-family: inherit;
+  background-color: $main-color;
+  color: $light-text-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin form-text {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444;
+}

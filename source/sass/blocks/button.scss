@@ -1,0 +1,10 @@
+.button {
+  @include button;
+  border: none;
+  cursor: pointer;
+
+  &--show-all {
+    background-color: $secondary-color;
+    color: $main-text-color;
+  }
+}

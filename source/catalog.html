@@ -2,16 +2,35 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./css/style.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page__body">
+    <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#"> </a>
-      <span class="main-header__logo-text logo-text"> </span>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <div class="main-header-container">
+        <div class="main-header-header">
+          <a class="main-header__logo" href="#">
+            <img
+              class="main-header__logo"
+              src="img/icon/logo-mobile.svg"
+              alt=""
+            />
+          </a>
+          <img
+            class="main-header__logo-text logo-text"
+            src="img/icon/logo-text.svg"
+            width="101"
+            height="18"
+          />
+          <button
+            class="main-nav__toggle main-nav__toggle--close"
+            type="button"
+          >
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+      <nav class="main-nav main-nav--opened">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
@@ -42,7 +61,8 @@
             PRO
             500 г с курицей."
             />
-            <h3 class="card__title">Cat Energy PRO 500 г</h3>
+            <div>
+              <h3 class="card__title">Cat Energy PRO 500 г</h3>
             <div class="card__description">
               <span>Масса</span>
               <span>500 г</span>
@@ -55,6 +75,8 @@
               <span>Цена</span>
               <span>700 ₽</span>
             </div>
+          </div>
+            
             <button class="card__button button" type="button">заказать</button>
           </li>
           <li class="catalog__list-item card">
@@ -65,7 +87,8 @@
               height="100"
               alt="Cat Energy PRO 1000 г с курицей."
             />
-            <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+            <div>
+              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
             <div class="card__description">
               <span>Масса</span>
               <span>1000 г</span>
@@ -78,6 +101,7 @@
               <span>Цена</span>
               <span>1000 ₽</span>
             </div>
+          </div>
             <button class="card__button button" type="button">заказать</button>
           </li>
           <li class="catalog__list-item card">
@@ -88,7 +112,8 @@
               height="86"
               alt="Cat Energy PRO 500 г с рыбой."
             />
-            <h3 class="card__title">Cat Energy PRO 500 г</h3>
+            <div>
+              <h3 class="card__title">Cat Energy PRO 500 г</h3>
             <div class="card__description">
               <span>Масса</span>
               <span>500 г</span>
@@ -101,6 +126,7 @@
               <span>Цена</span>
               <span>700 ₽</span>
             </div>
+          </div>
             <button class="card__button button" type="button">заказать</button>
           </li>
           <li class="catalog__list-item card">
@@ -113,7 +139,8 @@
             PRO
             1000 г с рыбой"
             />
-            <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+            <div>
+              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
             <div class="card__description">
               <span>Масса</span>
               <span>500 г</span>
@@ -126,6 +153,7 @@
               <span>Цена</span>
               <span>1000 ₽</span>
             </div>
+          </div>
             <button class="card__button button" type="button">заказать</button>
           </li>
           <li class="catalog__list-item card">
@@ -136,7 +164,8 @@
               height="86"
               alt="Cat Energy slim 500 г с гречкой."
             />
-            <h3 class="card__title">Cat Energy slim 500 г</h3>
+            <div>
+              <h3 class="card__title">Cat Energy slim 500 г</h3>
             <div class="card__description">
               <span>Масса</span>
               <span>500 г</span>
@@ -149,6 +178,8 @@
               <span>Цена</span>
               <span>400 ₽</span>
             </div>
+          </div>
+            
             <button class="card__button button" type="button">заказать</button>
           </li>
           <li class="catalog__list-item card">
@@ -159,7 +190,8 @@
               height="100"
               alt="Cat Energy slim 1000 г с гречкой"
             />
-            <h3 class="card__title">Cat Energy slim 1000 г</h3>
+            <div>
+              <h3 class="card__title">Cat Energy slim 1000 г</h3>
             <div class="card__description">
               <span>Масса</span>
               <span>1000 г</span>
@@ -172,6 +204,7 @@
               <span>Цена</span>
               <span>700 ₽</span>
             </div>
+          </div>
             <button class="card__button button" type="button">заказать</button>
           </li>
           <li class="catalog__list-item card">
@@ -182,7 +215,8 @@
               height="86"
               alt="Cat Energy slim 500 г с курицей."
             />
-            <h3 class="card__title">Cat Energy slim 500 г</h3>
+            <div>
+              <h3 class="card__title">Cat Energy slim 500 г</h3>
             <div class="card__description">
               <span>Масса</span>
               <span>500 г</span>
@@ -195,12 +229,15 @@
               <span>Цена</span>
               <span>500 ₽</span>
             </div>
+          </div>
             <button class="card__button button" type="button">заказать</button>
           </li>
           <li class="catalog__list-item card">
-            <h3>Показать еще 100500 товаров</h3>
-            <p>На самом деле вкусов гораздо больше!</p>
-            <button type="button">показать все</button>
+            <h3 class="card__title">Показать еще 100500 товаров</h3>
+            <p class="card__description">На самом деле вкусов гораздо больше!</p>
+            <button class="button button--show-all" type="button">
+              показать все
+            </button>
           </li>
         </ul>
         <section class="additionally">
