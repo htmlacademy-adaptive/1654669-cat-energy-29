@@ -1,0 +1,86 @@
+.slider {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .slider {
+    margin-top: 100px;
+    padding: 0 75px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .slider {
+    margin-top: -207px;
+    margin-bottom: 83px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider img {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__toggle {
+  z-index: 2;
+  background-color: #ffffff;
+  border: 3px solid #666666;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+
+  &::before {
+    content: "";
+    border: 8px solid transparent;
+    border-right: 8px solid #666666;
+    position: absolute;
+    right: 50%;
+    transform: translateX(-25%);
+  }
+
+  &::after {
+    content: "";
+    border: 8px solid transparent;
+    border-left: 8px solid #666666;
+    position: absolute;
+    left: 50%;
+    transform: translateX(25%);
+  }
+}
+
+.slider__border::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #666666;
+}
+
+.slider__toggle:hover {
+  border-color: $main-color;
+}
+
+.slider__toggle:hover::before {
+  border-right-color: $main-color;
+}
+
+.slider__toggle:hover::after {
+  border-left-color: $main-color;
+}
+
+.slider__border:hover::after {
+  background-color: $main-color;
+}

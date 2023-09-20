@@ -12,7 +12,8 @@
     "gulp-postcss": "9.0.1",
     "postcss": "8.3.11",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.11"
+    "stylelint-config-htmlacademy": "0.1.11",
+    "stylelint-config-prettier": "^9.0.5"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -39,5 +40,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "urix": "^0.1.0"
+  }
 }
