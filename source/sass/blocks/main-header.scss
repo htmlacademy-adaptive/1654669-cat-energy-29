@@ -1,51 +1,124 @@
-.main-header-container {
-  padding: 0 20px;
-  margin: 0 auto;
+@media (min-width: 1220px) {
+  .main-header--bg::before {
+    content: "";
+    position: absolute;
+    height: 694px;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #65a93c;
+    background-image: url("../../img/index/hero-cat-desktop.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
+
+@media (min-width: 768px) {
+  .main-header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .main-header__wrapper {
+    padding: 0;
+    padding-top: 56px;
+  }
+}
+
 
 .main-header-header {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 11px;
+  align-items: center;
+  padding: 12px 0;
 }
 
-@media (min-width: 768px){
-   .main-header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-}
-
-
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .main-header-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 174px;
-}
-}
-
-@media (min-width: 768px){
-  .main-header__logo {
-    width: 174px;
-    height: 52px;
-}
-}
-
-
-@media (min-width: 768px){
-  .main-nav__toggle--close {
-    display: none;
-}
-}
-
-@media(min-width: 768px){
-  .main-header__logo-text{
-    display: none;
-    
+    padding: 0;
   }
 }
 
+@media (min-width: 768px) {
+  .main-header__logo img {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .main-header__logo img {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header__logo-text {
+    display: none;
+  }
+}
+
+.main-header__logo:hover {
+  opacity: 0.6;
+}
+
+.main-header__logo:active {
+  opacity: 0.3;
+}
+
+.main-nav__toggle {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.main-nav__toggle>span,
+.main-nav__toggle>span::before,
+.main-nav__toggle>span::after {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.main-nav__toggle>span::before {
+  content: "";
+  top: -8px;
+}
+
+.main-nav__toggle>span::after {
+  content: "";
+  top: 8px;
+}
+
+.main-nav__toggle.active>span {
+  transform: rotate(45deg);
+}
+
+.main-nav__toggle.active>span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+.main-nav__toggle.active>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

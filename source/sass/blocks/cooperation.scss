@@ -1,0 +1,149 @@
+.cooperation__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1220px) {
+  .cooperation__contacts {
+    position: relative;
+  }
+}
+
+.cooperation__maps {
+  position: relative;
+  height: 362px;
+  order: 2;
+}
+
+@media (min-width: 768px) {
+  .cooperation__maps {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .cooperation__maps {
+    position: relative;
+    height: 400px;
+  }
+}
+
+.cooperation__maps iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (min-width: 1220px) {
+  .cooperation__maps iframe {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.cooperation__maps picture {
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: 1220px) {
+  .cooperation__maps picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+}
+
+.cooperation__maps img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cooperation--background {
+  background-color: #f2f2f2;
+}
+
+.cooperation {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+
+@media (min-width: 768px) {
+  .cooperation {
+    display: flex;
+    justify-content: space-between;
+    padding: 59px 70px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .cooperation {
+    position: absolute;
+    z-index: 1;
+    width: 570px;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% - 329px), -50%);
+    min-height: 199px;
+    background: $light-color;
+  }
+}
+
+.cooperation__text {
+  max-width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .cooperation__text {
+    line-height: 25px;
+    font-size: 20px;
+    max-width: 165px;
+  }
+}
+
+.cooperation__address {
+  max-width: 140px;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .cooperation__address {
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 165px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .cooperation__address {
+    text-align: left;
+  }
+}
+
+.cooperation__address-street {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .cooperation__address-street {
+    margin-bottom: 21px;
+  }
+}
